@@ -12,33 +12,33 @@
 		</Row>
 
 		<Row Tag="LOC_TECH_CITY2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>第二座城减少-10%科学和文化</Text>
 		</Row>
 		<Row Tag="LOC_TECH_CITY3_DESCRIPTION" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>第三座城减少-10%科学和文化</Text>
 		</Row>
 		<Row Tag="LOC_TECH_CITY4_DESCRIPTION" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>第四座城减少-10%科学和文化</Text>
 		</Row>
 
 		<Row Tag="LOC_BOOST_TRIGGER_CITY2" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>建造第二座城</Text>
 		</Row>
 		<Row Tag="LOC_BOOST_TRIGGER_CITY3" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>建造第三座城</Text>
 		</Row>
 		<Row Tag="LOC_BOOST_TRIGGER_CITY4" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>建造第四座城</Text>
 		</Row>
 
 		<Row Tag="LOC_BOOST_TRIGGER_LONGDESC_CITY2" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>第二座城减少-10%科学和文化</Text>
 		</Row>
 		<Row Tag="LOC_BOOST_TRIGGER_LONGDESC_CITY3" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>第三座城减少-10%科学和文化</Text>
 		</Row>
 		<Row Tag="LOC_BOOST_TRIGGER_LONGDESC_CITY4" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>第四座城减少-10%科学和文化</Text>
 		</Row>
 	</LocalizedText>
 </GameData>
