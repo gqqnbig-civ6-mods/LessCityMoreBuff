@@ -1,11 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="87d323f7-59ef-44a4-80f1-0a378939abb1" version="1">
+<Mod id="87d323f7-59ef-44a4-80f1-0a378939abb1" version="1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="../Civ6schema/xml/ModInfo.xsd">
   <Properties>
     <Name>Less City More buff</Name>
     <Description>This is a brief description of the mod.</Description>
     <Created>1588876466</Created>
     <Teaser>This is a brief description of the mod.</Teaser>
     <Authors>gqqnbig</Authors>
+    <AffectsSavedGames>0</AffectsSavedGames>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
   </Properties>
+  <InGameActions>
+    <UpdateDatabase>
+      <File>Technologies_Gameplay.xml</File>
+    </UpdateDatabase>
+    <UpdateText>
+      <File>Text.xml</File>
+    </UpdateText>
+  </InGameActions>
+  <Files>
+    <File>Technologies_Gameplay.xml</File>
+    <File>Text.xml</File>
+  </Files>
 </Mod>
