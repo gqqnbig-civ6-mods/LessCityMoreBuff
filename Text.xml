@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <GameData>
 	<LocalizedText>
-		<Row Tag="TECH_CITY2" Language="zh_Hans_CN">
+		<Row Tag="LOC_TECH_CITY2" Language="zh_Hans_CN">
 			<Text>2城</Text>
 		</Row>
-		<Row Tag="TECH_CITY3" Language="zh_Hans_CN">
+		<Row Tag="LOC_TECH_CITY3" Language="zh_Hans_CN">
 			<Text>3城</Text>
 		</Row>
-		<Row Tag="TECH_CITY4" Language="zh_Hans_CN">
+		<Row Tag="LOC_TECH_CITY4" Language="zh_Hans_CN">
 			<Text>4城</Text>
 		</Row>
 
