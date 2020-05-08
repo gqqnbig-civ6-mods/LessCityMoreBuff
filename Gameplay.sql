@@ -61,4 +61,4 @@ select 'TECH_CITY1', 'CITY1_BOOST_'||yieldType.x||'_SCALING' from yieldType;
 WITH RECURSIVE cityCount(x) AS (VALUES(2) UNION ALL SELECT x+1 FROM cityCount WHERE x<4),
                yieldType(x) AS (VALUES('CULTURE'), ('SCIENCE'))
 insert into TechnologyModifiers(technologytype, modifierid)
-select 'TECH_CITY1', 'CITY'||cityCount.x||'_BOOST_'||yieldType.x||'_SCALING_REVERSE' from yieldType, cityCount;
+select 'TECH_CITY'||cityCount.x, 'CITY'||cityCount.x||'_BOOST_'||yieldType.x||'_SCALING_REVERSE' from yieldType, cityCount;
