@@ -6,9 +6,9 @@ select 'TECH_CITY'||cityCount.x, 'KIND_CIVIC' from cityCount;
 
 -- Technologies
 insert into Civics(CivicType, name, cost, description, eratype, UITreeRow, advisortype)
-values ('TECH_CITY1', 'LOC_TECH_CITY1', 2, 'LOC_TECH_CITY1_DESCRIPTION', 'ERA_ANCIENT', -2,'ADVISOR_GENERIC'),
-       ('TECH_CITY2', 'LOC_TECH_CITY2', 4, 'LOC_TECH_CITY2_DESCRIPTION', 'ERA_ANCIENT', -1,'ADVISOR_GENERIC'),
-       ('TECH_CITY3', 'LOC_TECH_CITY3', 4, 'LOC_TECH_CITY3_DESCRIPTION', 'ERA_ANCIENT', -2,'ADVISOR_GENERIC'),
+values ('TECH_CITY1', 'LOC_TECH_CITY1', 2, 'LOC_TECH_CITY1_DESCRIPTION', 'ERA_ANCIENT', -3,'ADVISOR_GENERIC'),
+       ('TECH_CITY2', 'LOC_TECH_CITY2', 4, 'LOC_TECH_CITY2_DESCRIPTION', 'ERA_ANCIENT', -3,'ADVISOR_GENERIC'),
+       ('TECH_CITY3', 'LOC_TECH_CITY3', 4, 'LOC_TECH_CITY3_DESCRIPTION', 'ERA_ANCIENT', -3,'ADVISOR_GENERIC'),
        ('TECH_CITY4', 'LOC_TECH_CITY4', 4, 'LOC_TECH_CITY4_DESCRIPTION', 'ERA_ANCIENT', -3,'ADVISOR_GENERIC');
 
 
@@ -18,7 +18,7 @@ values ('TECH_CITY1', 'LOC_TECH_CITY1', 2, 'LOC_TECH_CITY1_DESCRIPTION', 'ERA_AN
 --
 WITH RECURSIVE cityCount(x) AS (VALUES(2) UNION ALL SELECT x+1 FROM cityCount WHERE x<4)
 insert into CivicPrereqs(Civic, PrereqCivic)
-select 'TECH_CITY'||cityCount.x, 'TECH_CITY1' FROM cityCount;
+select 'TECH_CITY'||cityCount.x, 'TECH_CITY'||(cityCount.x-1) FROM cityCount;
 
 -- Boosts
 WITH RECURSIVE cityCount(x) AS (VALUES(1) UNION ALL SELECT x+1 FROM cityCount WHERE x<4)
