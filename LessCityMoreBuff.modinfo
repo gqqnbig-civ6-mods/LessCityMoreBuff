@@ -4,9 +4,9 @@
      xsi:noNamespaceSchemaLocation="../Civ6schema/xml/ModInfo.xsd">
   <Properties>
     <Name>Less City More buff</Name>
-    <Description>This is a brief description of the mod.</Description>
+    <Description>Single City get 30% science and culture boost. The boost decreases to 0 when you reach 4 cities.</Description>
     <Created>1588876466</Created>
-    <Teaser>This is a brief description of the mod.</Teaser>
+    <Teaser>Single City get 30% science and culture boost. The boost decreases to 0 when you have 4 cities.</Teaser>
     <Authors>gqqnbig</Authors>
     <AffectsSavedGames>0</AffectsSavedGames>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
