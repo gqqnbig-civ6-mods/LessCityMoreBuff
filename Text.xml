@@ -1,26 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <GameData>
 	<LocalizedText>
+		<Row Tag="LOC_TECH_CITY1" Language="zh_Hans_CN">
+			<Text>1城奖励</Text>
+		</Row>
+
 		<Row Tag="LOC_TECH_CITY2" Language="zh_Hans_CN">
-			<Text>2城</Text>
+			<Text>2城奖励</Text>
 		</Row>
 		<Row Tag="LOC_TECH_CITY3" Language="zh_Hans_CN">
-			<Text>3城</Text>
+			<Text>3城奖励</Text>
 		</Row>
 		<Row Tag="LOC_TECH_CITY4" Language="zh_Hans_CN">
-			<Text>4城</Text>
+			<Text>4城奖励</Text>
 		</Row>
 
+		<Row Tag="LOC_TECH_CITY1_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>如果您只有一座城，科学和文化+30%</Text>
+		</Row>
 		<Row Tag="LOC_TECH_CITY2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>第二座城减少-10%科学和文化</Text>
+			<Text>如果您一共有二座城，科学和文化+20%</Text>
 		</Row>
 		<Row Tag="LOC_TECH_CITY3_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>第三座城减少-10%科学和文化</Text>
+			<Text>如果您一共有三座城，科学和文化+10%</Text>
 		</Row>
 		<Row Tag="LOC_TECH_CITY4_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>第四座城减少-10%科学和文化</Text>
+			<Text>如果您有四座或更多的城，科学和文化+0%</Text>
 		</Row>
 
+		<Row Tag="LOC_BOOST_TRIGGER_CITY1" Language="zh_Hans_CN">
+			<Text>建造第一座城</Text>
+		</Row>
 		<Row Tag="LOC_BOOST_TRIGGER_CITY2" Language="zh_Hans_CN">
 			<Text>建造第二座城</Text>
 		</Row>
@@ -29,16 +39,6 @@
 		</Row>
 		<Row Tag="LOC_BOOST_TRIGGER_CITY4" Language="zh_Hans_CN">
 			<Text>建造第四座城</Text>
-		</Row>
-
-		<Row Tag="LOC_BOOST_TRIGGER_LONGDESC_CITY2" Language="zh_Hans_CN">
-			<Text>第二座城减少-10%科学和文化</Text>
-		</Row>
-		<Row Tag="LOC_BOOST_TRIGGER_LONGDESC_CITY3" Language="zh_Hans_CN">
-			<Text>第三座城减少-10%科学和文化</Text>
-		</Row>
-		<Row Tag="LOC_BOOST_TRIGGER_LONGDESC_CITY4" Language="zh_Hans_CN">
-			<Text>第四座城减少-10%科学和文化</Text>
 		</Row>
 	</LocalizedText>
 </GameData>

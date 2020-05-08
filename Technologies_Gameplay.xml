@@ -1,36 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		  xsi:noNamespaceSchemaLocation="../Civ6schema/xml/Gameplay.xsd">
+<!--
+Because only boost triggers can test the number of cities, the logic has to be implemented as technologies or civics.
+1 cities: +30% science, +30% culture
+2 cities: +20% science, +20% culture
+3 cities: +10% science, +10% culture
+4 cities: +0% science, +0% culture
+5 cities: +0% science, +0% culture
+etc.
+
+There is an initial civic, so I add the initial buff there. Then implement debuff as technologies.
+ -->
+
 	<Types>
+		<Row Type="TECH_CITY1" Kind="KIND_TECH"/>
 		<Row Type="TECH_CITY2" Kind="KIND_TECH"/>
 		<Row Type="TECH_CITY3" Kind="KIND_TECH"/>
 		<Row Type="TECH_CITY4" Kind="KIND_TECH"/>
 	</Types>
 	<Technologies>
+		<Row TechnologyType="TECH_CITY1" Name="LOC_TECH_CITY1" Cost="2" Description="LOC_TECH_CITY1_DESCRIPTION" EraType="ERA_ANCIENT" UITreeRow="-2" AdvisorType="ADVISOR_GENERIC"/>
 		<Row TechnologyType="TECH_CITY2" Name="LOC_TECH_CITY2" Cost="4" Description="LOC_TECH_CITY2_DESCRIPTION" EraType="ERA_ANCIENT" UITreeRow="-1" AdvisorType="ADVISOR_GENERIC"/>
 		<Row TechnologyType="TECH_CITY3" Name="LOC_TECH_CITY3" Cost="4" Description="LOC_TECH_CITY3_DESCRIPTION" EraType="ERA_ANCIENT" UITreeRow="-2" AdvisorType="ADVISOR_GENERIC"/>
 		<Row TechnologyType="TECH_CITY4" Name="LOC_TECH_CITY4" Cost="4" Description="LOC_TECH_CITY4_DESCRIPTION" EraType="ERA_ANCIENT" UITreeRow="-3" AdvisorType="ADVISOR_GENERIC"/>
 	</Technologies>
+	<TechnologyPrereqs>
+		<Row Technology="TECH_CITY2" PrereqTech="TECH_CITY1"/>
+		<Row Technology="TECH_CITY3" PrereqTech="TECH_CITY1"/>
+		<Row Technology="TECH_CITY4" PrereqTech="TECH_CITY1"/>
+	</TechnologyPrereqs>
 	<Boosts>
-		<Row TechnologyType="TECH_CITY2" Boost="100" TriggerDescription="LOC_BOOST_TRIGGER_CITY2" TriggerLongDescription="LOC_BOOST_TRIGGER_LONGDESC_CITY2"
+		<Row TechnologyType="TECH_CITY1" Boost="100" TriggerDescription="LOC_BOOST_TRIGGER_CITY1" TriggerLongDescription="LOC_TECH_CITY1_DESCRIPTION"
+			 BoostClass="BOOST_TRIGGER_NUM_CITIES" NumItems="1"/>
+		<Row TechnologyType="TECH_CITY2" Boost="100" TriggerDescription="LOC_BOOST_TRIGGER_CITY2" TriggerLongDescription="LOC_TECH_CITY2_DESCRIPTION"
 			 BoostClass="BOOST_TRIGGER_NUM_CITIES" NumItems="2"/>
-
-		<Row TechnologyType="TECH_CITY3" Boost="100" TriggerDescription="LOC_BOOST_TRIGGER_CITY3" TriggerLongDescription="LOC_BOOST_TRIGGER_LONGDESC_CITY3"
+		<Row TechnologyType="TECH_CITY3" Boost="100" TriggerDescription="LOC_BOOST_TRIGGER_CITY3" TriggerLongDescription="LOC_TECH_CITY3_DESCRIPTION"
 			 BoostClass="BOOST_TRIGGER_NUM_CITIES" NumItems="3"/>
-
-		<Row TechnologyType="TECH_CITY4" Boost="100" TriggerDescription="LOC_BOOST_TRIGGER_CITY4" TriggerLongDescription="LOC_BOOST_TRIGGER_LONGDESC_CITY4"
+		<Row TechnologyType="TECH_CITY4" Boost="100" TriggerDescription="LOC_BOOST_TRIGGER_CITY4" TriggerLongDescription="LOC_TECH_CITY4_DESCRIPTION"
 			 BoostClass="BOOST_TRIGGER_NUM_CITIES" NumItems="4"/>
 	</Boosts>
 	<Modifiers>
+		<Row ModifierId="CITY1_BOOST_SCIENCE_SCALING" ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER"/>
 		<Row ModifierId="CITY2_BOOST_SCIENCE_SCALING_REVERSE" ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER"/>
 		<Row ModifierId="CITY3_BOOST_SCIENCE_SCALING_REVERSE" ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER"/>
 		<Row ModifierId="CITY4_BOOST_SCIENCE_SCALING_REVERSE" ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER"/>
 
+		<Row ModifierId="CITY1_BOOST_CULTURE_SCALING" ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER"/>
 		<Row ModifierId="CITY2_BOOST_CULTURE_SCALING_REVERSE" ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER"/>
 		<Row ModifierId="CITY3_BOOST_CULTURE_SCALING_REVERSE" ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER"/>
 		<Row ModifierId="CITY4_BOOST_CULTURE_SCALING_REVERSE" ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER"/>
 	</Modifiers>
 	<ModifierArguments>
+		<Row ModifierId="CITY1_BOOST_SCIENCE_SCALING" Name="Amount" Value="30"/>
+		<Row ModifierId="CITY1_BOOST_SCIENCE_SCALING" Name="YieldType" Value="YIELD_SCIENCE"/>
 		<Row ModifierId="CITY2_BOOST_SCIENCE_SCALING_REVERSE" Name="Amount" Value="-10"/>
 		<Row ModifierId="CITY2_BOOST_SCIENCE_SCALING_REVERSE" Name="YieldType" Value="YIELD_SCIENCE"/>
 		<Row ModifierId="CITY3_BOOST_SCIENCE_SCALING_REVERSE" Name="Amount" Value="-10"/>
@@ -38,6 +61,8 @@
 		<Row ModifierId="CITY4_BOOST_SCIENCE_SCALING_REVERSE" Name="Amount" Value="-10"/>
 		<Row ModifierId="CITY4_BOOST_SCIENCE_SCALING_REVERSE" Name="YieldType" Value="YIELD_SCIENCE"/>
 
+		<Row ModifierId="CITY1_BOOST_CULTURE_SCALING" Name="Amount" Value="30"/>
+		<Row ModifierId="CITY1_BOOST_CULTURE_SCALING" Name="YieldType" Value="YIELD_CULTURE"/>
 		<Row ModifierId="CITY2_BOOST_CULTURE_SCALING_REVERSE" Name="Amount" Value="-10"/>
 		<Row ModifierId="CITY2_BOOST_CULTURE_SCALING_REVERSE" Name="YieldType" Value="YIELD_CULTURE"/>
 		<Row ModifierId="CITY3_BOOST_CULTURE_SCALING_REVERSE" Name="Amount" Value="-10"/>
@@ -46,6 +71,8 @@
 		<Row ModifierId="CITY4_BOOST_CULTURE_SCALING_REVERSE" Name="YieldType" Value="YIELD_CULTURE"/>
 	</ModifierArguments>
 	<TechnologyModifiers>
+		<Row TechnologyType="TECH_CITY1" ModifierId="CITY1_BOOST_SCIENCE_SCALING"/>
+		<Row TechnologyType="TECH_CITY1" ModifierId="CITY1_BOOST_CULTURE_SCALING"/>
 		<Row TechnologyType="TECH_CITY2" ModifierId="CITY2_BOOST_SCIENCE_SCALING_REVERSE"/>
 		<Row TechnologyType="TECH_CITY2" ModifierId="CITY2_BOOST_CULTURE_SCALING_REVERSE"/>
 		<Row TechnologyType="TECH_CITY3" ModifierId="CITY3_BOOST_SCIENCE_SCALING_REVERSE"/>
