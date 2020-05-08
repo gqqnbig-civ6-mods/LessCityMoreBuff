@@ -7,9 +7,9 @@
 		<Row Type="TECH_CITY4" Kind="KIND_TECH"/>
 	</Types>
 	<Technologies>
-		<Row TechnologyType="TECH_CITY2" Name="LOC_TECH_CITY2" Cost="0" Description="LOC_TECH_CITY2_DESCRIPTION" EraType="ERA_ANCIENT" UITreeRow="-1" AdvisorType="ADVISOR_GENERIC"/>
-		<Row TechnologyType="TECH_CITY3" Name="LOC_TECH_CITY3" Cost="0" Description="LOC_TECH_CITY3_DESCRIPTION" EraType="ERA_ANCIENT" UITreeRow="-2" AdvisorType="ADVISOR_GENERIC"/>
-		<Row TechnologyType="TECH_CITY4" Name="LOC_TECH_CITY4" Cost="0" Description="LOC_TECH_CITY4_DESCRIPTION" EraType="ERA_ANCIENT" UITreeRow="-3" AdvisorType="ADVISOR_GENERIC"/>
+		<Row TechnologyType="TECH_CITY2" Name="LOC_TECH_CITY2" Cost="4" Description="LOC_TECH_CITY2_DESCRIPTION" EraType="ERA_ANCIENT" UITreeRow="-1" AdvisorType="ADVISOR_GENERIC"/>
+		<Row TechnologyType="TECH_CITY3" Name="LOC_TECH_CITY3" Cost="4" Description="LOC_TECH_CITY3_DESCRIPTION" EraType="ERA_ANCIENT" UITreeRow="-2" AdvisorType="ADVISOR_GENERIC"/>
+		<Row TechnologyType="TECH_CITY4" Name="LOC_TECH_CITY4" Cost="4" Description="LOC_TECH_CITY4_DESCRIPTION" EraType="ERA_ANCIENT" UITreeRow="-3" AdvisorType="ADVISOR_GENERIC"/>
 	</Technologies>
 	<Boosts>
 		<Row TechnologyType="TECH_CITY2" Boost="50" TriggerDescription="LOC_BOOST_TRIGGER_CITY2" TriggerLongDescription="LOC_BOOST_TRIGGER_LONGDESC_CITY2"
