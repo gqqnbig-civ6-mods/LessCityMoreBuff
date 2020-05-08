@@ -15,12 +15,17 @@
     <UpdateDatabase>
       <File>Gameplay.sql</File>
     </UpdateDatabase>
+    <AddGameplayScripts>
+      <Properties/>
+      <File>TriggerModifiers.lua</File>
+    </AddGameplayScripts>
     <UpdateText>
       <File>Text.xml</File>
     </UpdateText>
   </InGameActions>
   <Files>
     <File>Gameplay.sql</File>
+    <File>TriggerModifiers.lua</File>
     <File>Text.xml</File>
   </Files>
 </Mod>

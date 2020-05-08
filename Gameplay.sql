@@ -17,11 +17,6 @@ WITH RECURSIVE cityCount(x) AS (VALUES(1) UNION ALL SELECT x+1 FROM cityCount WH
 insert into TechnologyPrereqs(technology, prereqtech)
 select 'TECH_CITY'||cityCount.x, 'TECH_FUTURE_TECH' FROM cityCount;
 
--- Boosts
-WITH RECURSIVE cityCount(x) AS (VALUES(1) UNION ALL SELECT x+1 FROM cityCount WHERE x<4)
-insert into Boosts(TechnologyType, Boost, TriggerDescription, TriggerLongDescription, BoostClass, NumItems)
-select 'TECH_CITY'||cityCount.x, 100, 'LOC_BOOST_TRIGGER_CITY'||cityCount.x, 'LOC_TECH_CITY'||cityCount.x||'_DESCRIPTION', 'BOOST_TRIGGER_NUM_CITIES', cityCount.x from cityCount;
-
 
 -- Modifiers
 WITH yieldType(x) AS (VALUES('CULTURE'), ('SCIENCE'))
@@ -62,3 +57,9 @@ WITH RECURSIVE cityCount(x) AS (VALUES(2) UNION ALL SELECT x+1 FROM cityCount WH
                yieldType(x) AS (VALUES('CULTURE'), ('SCIENCE'))
 insert into TechnologyModifiers(technologytype, modifierid)
 select 'TECH_CITY'||cityCount.x, 'CITY'||cityCount.x||'_BOOST_'||yieldType.x||'_SCALING_REVERSE' from yieldType, cityCount;
+
+delete from GoodyHuts
+where GoodyHutType='GOODYHUT_SCIENCE';
+
+delete from GoodyHutSubTypes
+where GoodyHut='GOODYHUT_SCIENCE';
