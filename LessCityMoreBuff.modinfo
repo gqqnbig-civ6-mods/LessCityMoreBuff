@@ -8,7 +8,7 @@
     <Created>1588876466</Created>
     <Teaser>Single City get 30% science and culture boost. The boost decreases to 0 when you have 4 cities.</Teaser>
     <Authors>gqqnbig</Authors>
-    <AffectsSavedGames>0</AffectsSavedGames>
+    <AffectsSavedGames>1</AffectsSavedGames>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
   </Properties>
   <InGameActions>
