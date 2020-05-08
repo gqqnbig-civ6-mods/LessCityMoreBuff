@@ -13,9 +13,9 @@ values ('TECH_CITY1', 'LOC_TECH_CITY1', 2, 'LOC_TECH_CITY1_DESCRIPTION', 'ERA_AN
 
 
 -- TechnologyPrereqs
-WITH RECURSIVE cityCount(x) AS (VALUES(2) UNION ALL SELECT x+1 FROM cityCount WHERE x<4)
+WITH RECURSIVE cityCount(x) AS (VALUES(1) UNION ALL SELECT x+1 FROM cityCount WHERE x<4)
 insert into TechnologyPrereqs(technology, prereqtech)
-select 'TECH_CITY'||cityCount.x, 'TECH_CITY1' FROM cityCount;
+select 'TECH_CITY'||cityCount.x, 'TECH_FUTURE_TECH' FROM cityCount;
 
 -- Boosts
 WITH RECURSIVE cityCount(x) AS (VALUES(1) UNION ALL SELECT x+1 FROM cityCount WHERE x<4)
