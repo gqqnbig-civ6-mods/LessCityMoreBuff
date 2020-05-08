@@ -13,14 +13,14 @@
   </Properties>
   <InGameActions>
     <UpdateDatabase>
-      <File>Technologies_Gameplay.xml</File>
+      <File>Gameplay.sql</File>
     </UpdateDatabase>
     <UpdateText>
       <File>Text.xml</File>
     </UpdateText>
   </InGameActions>
   <Files>
-    <File>Technologies_Gameplay.xml</File>
+    <File>Gameplay.sql</File>
     <File>Text.xml</File>
   </Files>
 </Mod>
