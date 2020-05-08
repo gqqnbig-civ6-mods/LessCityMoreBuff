@@ -16,16 +16,16 @@
 		</Row>
 
 		<Row Tag="LOC_TECH_CITY1_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>如果您只有一座城，科学和文化+30%</Text>
+			<Text>如果您只有一座城，[ICON_Science]科学和[ICON_Culture]文化+30%</Text>
 		</Row>
 		<Row Tag="LOC_TECH_CITY2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>如果您一共有二座城，科学和文化+20%</Text>
+			<Text>如果您一共有二座城，[ICON_Science]科学和[ICON_Culture]文化+20%</Text>
 		</Row>
 		<Row Tag="LOC_TECH_CITY3_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>如果您一共有三座城，科学和文化+10%</Text>
+			<Text>如果您一共有三座城，[ICON_Science]科学和[ICON_Culture]文化+10%</Text>
 		</Row>
 		<Row Tag="LOC_TECH_CITY4_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>如果您有四座或更多的城，科学和文化+0%</Text>
+			<Text>如果您有四座或更多的城，[ICON_Science]科学和[ICON_Culture]文化+0%</Text>
 		</Row>
 
 		<Row Tag="LOC_BOOST_TRIGGER_CITY1" Language="zh_Hans_CN">
