@@ -1,6 +1,10 @@
 function TestCityCountModifiers(playerId)
 	local player = Players[playerId]
 
+	if player:IsMajor() == false then
+		return
+	end
+
 	local cityCount = player:GetCities():GetCount()
 	if cityCount > 4 then
 		return
