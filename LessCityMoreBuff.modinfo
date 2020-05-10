@@ -13,7 +13,8 @@
   </Properties>
   <InGameActions>
     <UpdateDatabase>
-      <File>Gameplay.sql</File>
+      <File>Technologies_Gameplay.sql</File>
+      <File>Modifiers_Gameplay.sql</File>
     </UpdateDatabase>
     <AddGameplayScripts>
       <Properties/>
@@ -24,7 +25,8 @@
     </UpdateText>
   </InGameActions>
   <Files>
-    <File>Gameplay.sql</File>
+    <File>Technologies_Gameplay.sql</File>
+    <File>Modifiers_Gameplay.sql</File>
     <File>TriggerModifiers.lua</File>
     <File>Text.xml</File>
   </Files>

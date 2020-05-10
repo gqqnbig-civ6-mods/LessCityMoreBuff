@@ -16,16 +16,16 @@
 		</Row>
 
 		<Row Tag="LOC_TECH_CITY1_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>如果您只有一座城，[ICON_Science]科学和[ICON_Culture]文化+30%</Text>
+			<Text>如果您只有一座城，[ICON_Science]科学和[ICON_Culture]文化+30%，每一个时代奖励叠加，如古典时代为+60%。对城邦无效。</Text>
 		</Row>
 		<Row Tag="LOC_TECH_CITY2_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>如果您一共有二座城，[ICON_Science]科学和[ICON_Culture]文化+20%</Text>
+			<Text>如果您一共有二座城，[ICON_Science]科学和[ICON_Culture]文化+20%。每一个时代奖励叠加，如古典时代为+40%。对城邦无效。</Text>
 		</Row>
 		<Row Tag="LOC_TECH_CITY3_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>如果您一共有三座城，[ICON_Science]科学和[ICON_Culture]文化+10%</Text>
+			<Text>如果您一共有三座城，[ICON_Science]科学和[ICON_Culture]文化+10%。每一个时代奖励叠加，如古典时代为+20%。对城邦无效。</Text>
 		</Row>
 		<Row Tag="LOC_TECH_CITY4_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>如果您有四座或更多的城，[ICON_Science]科学和[ICON_Culture]文化+0%</Text>
+			<Text>如果您有四座或更多的城，[ICON_Science]科学和[ICON_Culture]文化+0%。对城邦无效。</Text>
 		</Row>
 
 		<Row Tag="LOC_BOOST_TRIGGER_CITY1" Language="zh_Hans_CN">
