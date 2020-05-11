@@ -102,9 +102,9 @@ ERAS = ['ANCIENT', 'CLASSICAL', 'MEDIEVAL', 'RENAISSANCE', 'INDUSTRIAL', 'MODERN
 MAX_CITY_COUNT = 4
 
 if __name__ == '__main__':
-	cityRange = range(1, MAX_CITY_COUNT)
+	cityRange = range(MAX_CITY_COUNT)
 
-	sql = [writeTechnologyModifiers(cityCount)[1] for cityCount in cityRange]
+	sql = [writeTechnologyModifiers(cityCount + 1)[1] for cityCount in cityRange]
 
 	content = ';\n'.join(sql) + ';'
 	with open('../Modifiers_Gameplay.sql', 'w') as f:
